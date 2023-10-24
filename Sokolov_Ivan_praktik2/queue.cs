@@ -95,6 +95,7 @@ namespace Sokolov_Ivan_praktik2
             tail = null;
             count = 0;
         }
+        // Вывод всей очереди
         public int[] Full_write()
         {
             int[] data = new int[count];
@@ -106,6 +107,21 @@ namespace Sokolov_Ivan_praktik2
             }
             return data;
         }
+        public int GetElent(int index)
+        {
+            Node current = head;
+            int l = 1;
+            while (l < index)
+            {
+                current = current.next;
+            }
+            return current.data;
+        }
+        public void SetElement(int index, int data)
+        {
+
+        }
     }
+
 
 }
